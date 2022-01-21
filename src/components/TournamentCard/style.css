@@ -19,7 +19,7 @@
   /* transition: all 0.2s ease-in-out; */
   box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
   transition: 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-  background: #e5e5e5;
+  background: #f3f5f9;
 }
 .tourney:hover {
   transform: scale(1.1);
