@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
-import "./Navbar.css";
-import Logo from "../../Image/logo.png";
-import { Input, Menu, Dropdown, Button, Typography } from "antd";
 import { DownOutlined } from "@ant-design/icons";
+import { Dropdown, Input, Menu, Typography } from "antd";
+import React from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import Logo from "../../Image/logo.png";
+import "./style.css";
 
 const { Text } = Typography;
 
