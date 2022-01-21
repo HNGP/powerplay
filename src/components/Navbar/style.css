@@ -1,0 +1,27 @@
+.navBg {
+  background-color: #f24242;
+  width: 100%;
+}
+.logoImg {
+  height: 40px;
+  margin-left: 20px;
+}
+.search {
+  border-radius: 8px;
+  width: 500px;
+  height: 34px;
+  margin-left: 270px;
+  background: #f3f3f3;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.avtar {
+  border-radius: 8px;
+  margin-left: 200px;
+}
+
+.location {
+  margin-left: 140px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: white;
+}
