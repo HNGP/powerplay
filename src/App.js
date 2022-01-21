@@ -1,12 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "antd/dist/antd.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Navigation from "./components/Navbar";
 import Landing from "./pages/Landing";
-import Matches from "./pages/Matches";
 import Match from "./pages/Match";
+import Matches from "./pages/Matches";
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
