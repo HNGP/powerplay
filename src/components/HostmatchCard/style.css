@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&display=swap");
+.host-match-card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  border-radius: 2rem;
+  box-shadow: 11px 11px 22px #d9d9d9, -11px -11px 22px #ffffff;
+  padding: 40px;
+}
+
+.hostinput {
+  border-radius: 8px;
+  width: 90%;
+  height: 40px;
+  background: #f3f3f3;
+  border: 1.5px solid #d34f4f;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* width: 50vm; */
+}
+.host-match-card > h1 {
+  margin-left: 10px;
+  font-family: "Bebas Neue";
+}
+.host-match-card > h5 {
+  margin-bottom: 15px;
+  margin-top: -10px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.host-match-card > button {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 100px;
+}
+
+.ant-radio-inner,
+.ant-radio-input {
+  width: 20px;
+  height: 20px;
+}
+.ant-radio-checked .ant-radio-inner {
+  border-color: #f24242 !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #f24242;
+}
+
+span.ant-radio + * {
+  font-size: 20px;
+  font-weight: 400;
+}
