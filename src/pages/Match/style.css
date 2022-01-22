@@ -1,0 +1,16 @@
+.match-header {
+  display: flex;
+  align-items: center;
+  margin: 4rem 3rem;
+  cursor: pointer;
+}
+
+.match-header > svg {
+  margin-right: 0.5rem;
+  color: #000000;
+}
+.match-header > h4 {
+  margin: 0;
+  line-height: 24px;
+  letter-spacing: -0.025em;
+}
