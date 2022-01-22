@@ -66,11 +66,15 @@ export default function Match() {
       <div className="competing-teams-info">
         <div>
           <h3>{teams.ateam}</h3>
-          <h3 className="secondary-header">({teams.acapacity} spots left)</h3>
+          <h3 className="secondary-header">
+            ({teams.acapacity || 11} spots left)
+          </h3>
         </div>
         <div>
           <h3>{teams.bteam}</h3>
-          <h3 className="secondary-header">({teams.bcapacity} spots left)</h3>
+          <h3 className="secondary-header">
+            ({teams.bcapacity || 11} spots left)
+          </h3>
         </div>
       </div>
       <br />

@@ -4,9 +4,9 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
 const OrganisertypeCard = (props) => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState("");
   const ClickHandler = () => {
-    props.onNextStep(4);
+    props.onNextStep({ organiser: value });
   };
 
   const onChange = (e) => {
@@ -30,8 +30,8 @@ const OrganisertypeCard = (props) => {
           justifyContent: "space-between",
         }}
       >
-        <Radio value={1}>Individual</Radio>
-        <Radio value={2}>Organisation</Radio>
+        <Radio value={"Individual"}>Individual</Radio>
+        <Radio value={"Organisation"}>Organisation</Radio>
       </Radio.Group>
       <Button
         type="primary"

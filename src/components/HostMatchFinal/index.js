@@ -11,6 +11,7 @@ const HostMatchFinal = (props) => {
   const ClickHandler = () => {
     setSuccess(true);
     console.log("bruhhh");
+    props.createMatch();
   };
 
   // const ShowResult = () => {

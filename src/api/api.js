@@ -18,3 +18,13 @@ export const fetchTeamById = async (id) => {
   const response = await api.get(`/teams/${id}`);
   return response.data;
 };
+
+export const createMatch = async (match) => {
+  const response = await api.post(`/match`, match);
+  return response.data;
+};
+
+export const createTeam = async (team) => {
+  const response = await api.post(`/teams`, team);
+  return response.data;
+};

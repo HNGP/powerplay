@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { nanoid } from "nanoid";
 import "./style.css";
 import HostMatchForm from "../../components/HostMatchForm/index.js";
 import HostMatchFinal from "../../components/HostMatchFinal/index.js";
@@ -6,13 +7,30 @@ import HostMatchTeams from "../../components/HostMatchTeams/index.js";
 import MatchnameCard from "../../components/HostmatchCard/matchCard";
 import SportsnameCard from "../../components/HostmatchCard/sportsCard";
 import OrganisertypeCard from "../../components/HostmatchCard/organisertypeCard";
+import { createMatch } from "../../api/api";
 import Match from "../Match";
 
 const HostMatch = () => {
   const [stage, setStage] = useState(1);
+  const [reqData, setReqData] = useState({});
 
-  const HandleNextStep = (stepNumber) => {
-    setStage(stepNumber);
+  const HandleNextStep = (object) => {
+    setStage((prevStep) => prevStep + 1);
+    setReqData((prevState) => ({
+      ...prevState,
+      ...object,
+    }));
+  };
+
+  const hostMatch = async () => {
+    setReqData((prevState) => ({
+      ...prevState,
+      id: nanoid(),
+    }));
+    const match = await createMatch(reqData);
+    if (match) {
+      console.log("success");
+    }
   };
 
   const ProcessStep = () => {
@@ -30,10 +48,13 @@ const HostMatch = () => {
         return <HostMatchForm onNextStep={HandleNextStep} />;
         break;
       case 5:
-        return <HostMatchTeams onNextStep={HandleNextStep} />;
+        return <HostMatchTeams onNextStep={HandleNextStep} id={1} />;
         break;
       case 6:
-        return <HostMatchFinal />;
+        return <HostMatchTeams onNextStep={HandleNextStep} id={2} />;
+        break;
+      case 7:
+        return <HostMatchFinal createMatch={hostMatch} />;
         break;
     }
   };
