@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TournamentCard from "../../components/TournamentCard";
+import "./style.css";
 
 export default function Matches() {
   const [tourny, setTourny] = useState([
@@ -41,11 +42,21 @@ export default function Matches() {
     },
   ]);
   return (
-    <div className="matches">
-      {tourny.map((trny) => (
-        <TournamentCard name={trny.name} sport={trny.sport} date={trny.date} />
-      ))}
-      ;
+    <div>
+      <div className="header">
+        <h1>MATCHES</h1>
+        <h3>Upcomming events in your area</h3>
+      </div>
+      <div className="matches">
+        {tourny.map((trny) => (
+          <TournamentCard
+            name={trny.name}
+            sport={trny.sport}
+            date={trny.date}
+          />
+        ))}
+        ;
+      </div>
     </div>
   );
 }
