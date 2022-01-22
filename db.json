@@ -1,20 +1,20 @@
 {
-    "match": [
-        { 
-            "id": "V1StGXR8_Z5jdHi6B-myT", 
-            "title": "RFCC Women’s Cricket Match", 
-            "sport": "Cricket",
-            "organiser": "Group", 
-            "date": "27th Feb 2021",
-            "venue": "SVD Maidan",
-            "format": "10 overs, tennis ball",
-            "byog": true,
-            "description": "Hosted by the RWA of Galaxy Apartments, this is an open cricket match for the residents of Mumbai.",
-            "ateam": "2",
-            "bteam": "1"
-        }
-    ],
-    "teams": [
+	"match": [
+		{
+			"id": "V1StGXR8_Z5jdHi6B-myT",
+			"title": "RFCC Women’s Cricket Match",
+			"sport": "Cricket",
+			"organiser": "Group",
+			"date": "27th Feb 2021",
+			"venue": "SVD Maidan",
+			"format": "10 overs, tennis ball",
+			"byog": true,
+			"description": "Hosted by the RWA of Galaxy Apartments, this is an open cricket match for the residents of Mumbai.",
+			"ateam": "2",
+			"bteam": "1"
+		}
+	],
+	"teams": [
 		{
 			"id": 1,
 			"title": "Marine Warriors",
@@ -50,6 +50,76 @@
 			"title": "Kolkata Sailors",
 			"capacity": "8",
 			"players": [8, 7, 9, 10, 13]
+		}
+	],
+	"players": [
+		{
+			"id": 1,
+			"name": "Sachin Tendulkar"
+		},
+		{
+			"id": 2,
+			"name": "Rahul Dravid"
+		},
+		{
+			"id": 3,
+			"name": "Virat Kohli"
+		},
+		{
+			"id": 4,
+			"name": "Rohit Sharma"
+		},
+		{
+			"id": 5,
+			"name": "Shikhar Dhawan"
+		},
+		{
+			"id": 6,
+			"name": "Kuldeep Yadav"
+		},
+		{
+			"id": 7,
+			"name": "Shreyas Iyer"
+		},
+		{
+			"id": 8,
+			"name": "Kane Williamson"
+		},
+		{
+			"id": 9,
+			"name": "Shreyas Gopal"
+		},
+		{
+			"id": 10,
+			"name": "Ravindra Jadeja"
+		},
+		{
+			"id": 11,
+			"name": "Kedar Jadhav"
+		},
+		{
+			"id": 12,
+			"name": "Yusuf Pathan"
+		},
+		{
+			"id": 13,
+			"name": "Dhoni"
+		},
+		{
+			"id": 14,
+			"name": "Hardik Pandya"
+		},
+		{
+			"id": 15,
+			"name": "Ravichandran Ashwin"
+		},
+		{
+			"id": 16,
+			"name": "Krunal Pandya"
+		},
+		{
+			"id": 17,
+			"name": "Jasprit Bumrah"
 		}
 	]
 }
