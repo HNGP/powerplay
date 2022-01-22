@@ -8,6 +8,7 @@ import Match from "./pages/Match";
 import Matches from "./pages/Matches";
 import HostMatch from "./pages/HostMatch";
 import Login from "./pages/Login";
+import Payment from "./pages/Payment";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/matches/:matchId" element={<Match />} />
           <Route path="/hostMatch" element={<HostMatch />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/payment" element={<Payment />} />
           <Route
             path="*"
             element={
