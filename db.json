@@ -55,71 +55,88 @@
 	"players": [
 		{
 			"id": 1,
-			"name": "Sachin Tendulkar"
+			"name": "Sachin Tendulkar",
+			"role": "Batsman"
 		},
 		{
 			"id": 2,
-			"name": "Rahul Dravid"
+			"name": "Rahul Dravid",
+			"role": "Batsman"
 		},
 		{
 			"id": 3,
-			"name": "Virat Kohli"
+			"name": "Virat Kohli",
+			"role": "Batsman"
 		},
 		{
 			"id": 4,
-			"name": "Rohit Sharma"
+			"name": "Rohit Sharma",
+			"role": "Batsman"
 		},
 		{
 			"id": 5,
-			"name": "Shikhar Dhawan"
+			"name": "Shikhar Dhawan",
+			"role": "Opener"
 		},
 		{
 			"id": 6,
-			"name": "Kuldeep Yadav"
+			"name": "Kuldeep Yadav",
+			"role": "Opener"
 		},
 		{
 			"id": 7,
-			"name": "Shreyas Iyer"
+			"name": "Shreyas Iyer",
+			"role": "Batsman"
 		},
 		{
 			"id": 8,
-			"name": "Kane Williamson"
+			"name": "Kane Williamson",
+			"role": "Batsman"
 		},
 		{
 			"id": 9,
-			"name": "Shreyas Gopal"
+			"name": "Shreyas Gopal",
+			"role": "Bowler"
 		},
 		{
 			"id": 10,
-			"name": "Ravindra Jadeja"
+			"name": "Ravindra Jadeja",
+			"role": "All-Rounder"
 		},
 		{
 			"id": 11,
-			"name": "Kedar Jadhav"
+			"name": "Kedar Jadhav",
+			"role": "Batsman"
 		},
 		{
 			"id": 12,
-			"name": "Yusuf Pathan"
+			"name": "Yusuf Pathan",
+			"role": "All-Rounder"
 		},
 		{
 			"id": 13,
-			"name": "Dhoni"
+			"name": "Dhoni",
+			"role": "Wicketkeeper"
 		},
 		{
 			"id": 14,
-			"name": "Hardik Pandya"
+			"name": "Hardik Pandya",
+			"role": "All-Rounder"
 		},
 		{
 			"id": 15,
-			"name": "Ravichandran Ashwin"
+			"name": "Ravichandran Ashwin",
+			"role": "Bowler"
 		},
 		{
 			"id": 16,
-			"name": "Krunal Pandya"
+			"name": "Krunal Pandya",
+			"role": "Bowler"
 		},
 		{
 			"id": 17,
-			"name": "Jasprit Bumrah"
+			"name": "Jasprit Bumrah",
+			"role": "Bowler"
 		}
 	]
 }

@@ -25,10 +25,9 @@ const TeamModal = (props) => {
 						arr.push(playerDetails);
 						setPlayer({ arr });
 					}
-					// fetchPlayer();
 				});
 				for (let i = 0; i < 11 - teamDetails.players.length; i++) {
-					arr.push({ id: null, name: `Player-${i + 1}` });
+					arr.push({ id: null, name: `Player-${i + 1}`, role: "TBD" });
 				}
 			}
 		};
@@ -55,7 +54,6 @@ const TeamModal = (props) => {
 		<div>
 			<Button className="team-title" type="link" onClick={showModal}>
 				{team.initial}
-				{/* {console.log(team.capacity)} */}
 			</Button>
 			<Modal
 				closeIcon={<IoMdArrowRoundBack />}
@@ -81,7 +79,7 @@ const TeamModal = (props) => {
 						dataSource={player.arr}
 						renderItem={(item) => (
 							<List.Item>
-								<List.Item.Meta title={item.name} />
+								<List.Item.Meta title={item.name} description={item.role} />
 								{item.id === null && (
 									<Radio
 										value={item.name}
