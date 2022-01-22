@@ -1,0 +1,59 @@
+.LoginCard {
+  padding: 50px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.icon {
+  color: #f24242;
+  font-size: 45px;
+  margin-right: 20px;
+}
+
+.username {
+  border-radius: 2px;
+  width: 500px;
+  background: #f3f3f3;
+  border: 1.5px solid #d34f4f;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.password {
+  border-radius: 2px;
+  width: 100%;
+  background: #f3f3f3;
+  border: 1.5px solid #d34f4f;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.LoginCard p {
+  font-size: 12px;
+  color: grey;
+  letter-spacing: 0.8;
+}
+
+.google-button {
+  height: 50px;
+  font-size: 21px;
+  border-radius: 10px;
+}
+
+.login-button {
+  background-color: #f24242;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 21px;
+  color: white;
+  margin-top: 20px;
+}
