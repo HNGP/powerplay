@@ -1,0 +1,33 @@
+.hero-landing {
+  background-color: #f3f5f9;
+}
+
+.HeroImg {
+  margin-top: 50px;
+}
+
+.LogoArea {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 420px;
+  margin-top: 200px;
+  z-index: 1;
+}
+
+.LogoArea p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 104%;
+  letter-spacing: -0.025em;
+}
+
+.Explore {
+  margin-top: 50px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.Explore:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
