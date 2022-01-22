@@ -3,7 +3,11 @@ import "./style.css";
 import { Button, Input } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
-const MatchnameCard = () => {
+const MatchnameCard = (props) => {
+  const ClickHandler = () => {
+    props.onNextStep(2);
+  };
+
   return (
     <div className="host-match-card">
       <h1>Match Name</h1>
@@ -14,6 +18,7 @@ const MatchnameCard = () => {
         shape="circle"
         icon={<ArrowRightOutlined />}
         danger
+        onClick={ClickHandler}
       ></Button>
     </div>
   );
