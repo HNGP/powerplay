@@ -1,46 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TournamentCard from "../../components/TournamentCard";
+import { fetchMatches } from "../../api/api";
 import "./style.css";
 
 export default function Matches() {
-  const [tourny, setTourny] = useState([
-    {
-      id: "1",
-      name: "RFCC Women’s Cricket Match",
-      sport: "Cricket",
-      date: "27th Feb 2021",
-    },
-    {
-      id: "2",
-      name: "RFCC Women’s Cricket Match",
-      sport: "Cricket",
-      date: "27th Feb 2021",
-    },
-    {
-      id: "3",
-      name: "RFCC Women’s Cricket Match",
-      sport: "Cricket",
-      date: "27th Feb 2021",
-    },
-    {
-      id: "4",
-      name: "RFCC Women’s Cricket Match",
-      sport: "Cricket",
-      date: "27th Feb 2021",
-    },
-    {
-      id: "5",
-      name: "RFCC Women’s Cricket Match",
-      sport: "Cricket",
-      date: "27th Feb 2021",
-    },
-    {
-      id: "6",
-      name: "RFCC Women’s Cricket Match",
-      sport: "Cricket",
-      date: "27th Feb 2021",
-    },
-  ]);
+  const [tourny, setTourny] = useState([]);
+  useEffect(() => {
+    const getMatches = async () => {
+      const matches = await fetchMatches();
+      if (matches) setTourny(matches);
+    };
+    getMatches();
+  }, []);
+
   return (
     <div>
       <div className="header">
@@ -50,12 +22,11 @@ export default function Matches() {
       <div className="matches">
         {tourny.map((trny) => (
           <TournamentCard
-            name={trny.name}
+            name={trny.title}
             sport={trny.sport}
             date={trny.date}
           />
         ))}
-        ;
       </div>
     </div>
   );
