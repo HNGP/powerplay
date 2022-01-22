@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&display=swap");
+.teamModal {
+    border-radius: 10px;
+}
+
+.ant-modal-content {
+    border-radius: 10px;
+}
+
+.ant-modal-header {
+    border-radius: 10px;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.ant-modal-title {
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ant-modal-close-x {
+    margin-left: -510px;
+}
+
+.ant-card-bordered {
+    border: 0px;
+}
+
+.ant-list-split .ant-list-item {
+    border: 0px;
+}
+
+.ant-modal-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.ant-modal-footer {
+    padding-bottom: 15px;
+    border-top: 0px;
+}
+
+.teamDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+}
