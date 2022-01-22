@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&display=swap%27");
+.match-page-header {
+  display: flex;
+  align-items: center;
+  margin: 4rem 3rem;
+  cursor: pointer;
+}
+
+.match-page-header > svg {
+  margin-right: 0.5rem;
+  color: #000000;
+}
+
+.match-page-header > h4 {
+  margin: 0;
+  line-height: 24px;
+  letter-spacing: -0.025em;
+}
+
+.match-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.match-header-info {
+  margin-left: 2rem;
+}
+
+.match-header-info > h3,
+.secondary-header {
+  color: #8d8d8d;
+  font-weight: 400;
+}
+
+.match-description {
+  max-width: 45rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.competing-teams {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.competing-teams-container {
+  max-width: 45rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vs {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+}
+
+.competing-teams-info {
+  max-width: 39rem;
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.competing-teams-info > div {
+  width: 200px;
+}
