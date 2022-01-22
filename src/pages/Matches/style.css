@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&display=swap%22");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&display=swap%22"); */
 .header {
   margin: 4rem 13rem;
 }
@@ -12,5 +12,5 @@
 
 .header > h1 {
   font-size: 80px;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
 }
