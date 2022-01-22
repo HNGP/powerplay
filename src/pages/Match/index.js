@@ -50,6 +50,7 @@ export default function Match() {
           <h3 className="secondary-header">(4 spots left)</h3>
         </div>
       </div>
+      <br />
     </>
   );
 }

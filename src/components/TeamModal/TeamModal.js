@@ -29,6 +29,11 @@ const data = [
 
 const TeamModal = (props) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [value, setValue] = useState("Aman Kumar");
+
+  const toggleRadio = (e) => {
+    setValue(e.target.value);
+  };
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -44,7 +49,7 @@ const TeamModal = (props) => {
 
   return (
     <div>
-      <Button type="link" onClick={showModal}>
+      <Button className="team-title" type="link" onClick={showModal}>
         {props.text}
       </Button>
       <Modal
@@ -72,7 +77,11 @@ const TeamModal = (props) => {
             renderItem={(item) => (
               <List.Item>
                 <List.Item.Meta title={item.title} description={item.role} />
-                <Radio />
+                <Radio
+                  value={item.title}
+                  checked={value === item.title}
+                  onClick={toggleRadio}
+                />
               </List.Item>
             )}
           />
