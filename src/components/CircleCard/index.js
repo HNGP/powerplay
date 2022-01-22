@@ -1,11 +1,10 @@
 import React from "react";
 import "./style.css";
-import CricketIcon from "../../Image/CricketIcon.png";
 
-const CircleCard = () => {
+const CircleCard = (props) => {
   return (
     <div className="circle-container">
-      <img src={CricketIcon} />
+      <img src={props.path} alt="icon" />
     </div>
   );
 };

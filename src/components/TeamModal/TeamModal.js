@@ -34,8 +34,8 @@ const TeamModal = (props) => {
 
   return (
     <>
-      <Button type="text" onClick={showModal}>
-        View Team
+      <Button type="link" onClick={showModal}>
+        {props.text}
       </Button>
       <Modal
         title="Current Team"
