@@ -9,6 +9,7 @@ import Matches from "./pages/Matches";
 import HostMatch from "./pages/HostMatch";
 import Login from "./pages/Login";
 import Payment from "./pages/Payment";
+import { Profile } from "./pages/Profile";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/hostMatch" element={<HostMatch />} />
           <Route path="/login" element={<Login />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/profile" element={<Profile />} />
           <Route
             path="*"
             element={

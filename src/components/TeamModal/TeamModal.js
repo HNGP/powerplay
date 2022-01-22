@@ -1,15 +1,17 @@
 import { Card, List, Modal, Button, Radio } from "antd";
 import "antd/dist/antd.css";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { fetchTeamById, fetchPlayerById } from "../../api/api";
 
 const TeamModal = (props) => {
-	const [isModalVisible, setIsModalVisible] = useState(false);
 	const [team, setTeam] = useState({});
 	const [player, setPlayer] = useState({});
+	const [isModalVisible, setIsModalVisible] = useState(false);
 	const [value, setValue] = useState("Aman Kumar");
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const fetchTeam = async () => {
@@ -48,6 +50,7 @@ const TeamModal = (props) => {
 
 	const handlePayment = () => {
 		setIsModalVisible(false);
+		navigate("/payment");
 	};
 
 	return (

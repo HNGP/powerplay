@@ -38,7 +38,7 @@ export default function Navigation() {
     <div className="navBg">
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
             <img className="logoImg" src={Logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
