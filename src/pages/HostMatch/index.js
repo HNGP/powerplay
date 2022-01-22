@@ -3,8 +3,12 @@ import "./style.css";
 
 const HostMatch = () => {
   return (
-    <div>
-      <h1>HOST MATCH</h1>
+    <div className="hero-host-match">
+      <h1>HOST A MATCH</h1>
+      <p>
+        Are you an individual/club/organisation wanting to list your in person
+        sports event on Powerplay just by filling up this form!
+      </p>
     </div>
   );
 };
