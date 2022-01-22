@@ -12,16 +12,16 @@ export default function Navigation() {
   const profileMenu = (
     <Menu>
       <Menu.Item>
-        <a href="https://www.antgroup.com">Your Profile</a>
+        <a href="/yourProfile">Your Profile</a>
       </Menu.Item>
       <Menu.Item>
-        <a href="https://www.aliyun.com">Past Matches</a>
+        <a href="/">Past Matches</a>
       </Menu.Item>
       <Menu.Item>
-        <a href="https://www.luohanacademy.com">Host a Match</a>
+        <a href="/hostMatch">Host a Match</a>
       </Menu.Item>
       <Menu.Item>
-        <a href="https://www.luohanacademy.com">Logout</a>
+        <a href="/Logout">Logout</a>
       </Menu.Item>
     </Menu>
   );

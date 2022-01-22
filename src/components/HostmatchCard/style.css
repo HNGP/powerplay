@@ -31,6 +31,8 @@
   margin-top: -10px;
   margin-left: 10px;
   font-weight: 400;
+  color: grey;
+  font-weight: 300;
 }
 .host-match-card > button {
   margin: 10px;

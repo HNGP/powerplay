@@ -25,16 +25,16 @@ const HostMatchForm = (props) => {
         </div>
 
         <div>
-          <p className="text">Match Format</p>
+          <p className="text">MATCH FORMAT</p>
           <Input className="inputField" />
         </div>
         <div className="gap">
-          <p className="text">Venue</p>
+          <p className="text">VENUE</p>
           <Input className="inputField" />
         </div>
 
         <div className="gap">
-          <p className="text">Date and Time</p>
+          <p className="text">DATE AND TIME</p>
           <DatePicker style={{ width: "50%" }} className="dateTime" />
           <TimePicker
             defaultValue={moment("9:00", format)}
@@ -45,7 +45,7 @@ const HostMatchForm = (props) => {
 
         <div className="gap">
           <div className="side">
-            <p className="text">Enable "Bring your Own Gear"?</p>
+            <p className="formHeadText">Enable "Bring your Own Gear"?</p>
           </div>
           <div className="side switch">
             <Switch />
