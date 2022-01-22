@@ -9,7 +9,7 @@ export const ProfileCard = () => {
       <div className="row1">
         <img src={dp} alt="sumeet" />
         <article className="basicinfo">
-          <h2>Sumeet Prakash</h2>
+          <h2>Sumit Prakash</h2>
           <p>
             <b>Age: </b>22
           </p>

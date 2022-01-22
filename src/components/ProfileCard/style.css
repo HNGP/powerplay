@@ -14,7 +14,7 @@
   margin-bottom: 20px;
   font-family: "Bebas Neue";
 }
-img {
+.row1 > img {
   margin-right: 70px;
   width: 171px;
   height: 171px;
@@ -28,7 +28,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-h3 {
+.row2 h3 {
   font-family: "Bebas Neue";
 }
 .basicinfo > p {
