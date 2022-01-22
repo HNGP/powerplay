@@ -23,11 +23,7 @@ const HostMatch = () => {
   };
 
   const hostMatch = async () => {
-    setReqData((prevState) => ({
-      ...prevState,
-      id: nanoid(),
-    }));
-    const match = await createMatch(reqData);
+    const match = await createMatch({ ...reqData, id: nanoid() });
     if (match) {
       console.log("success");
     }

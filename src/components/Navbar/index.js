@@ -12,16 +12,16 @@ export default function Navigation() {
   const profileMenu = (
     <Menu>
       <Menu.Item>
-        <a href="https://www.antgroup.com">Your Profile</a>
+        <a href="/profile">Your Profile</a>
       </Menu.Item>
       <Menu.Item>
-        <a href="https://www.aliyun.com">Past Matches</a>
+        <a href="/">Past Matches</a>
       </Menu.Item>
       <Menu.Item>
-        <a href="https://www.luohanacademy.com">Host a Match</a>
+        <a href="/hostMatch">Host a Match</a>
       </Menu.Item>
       <Menu.Item>
-        <a href="https://www.luohanacademy.com">Logout</a>
+        <a href="/">Logout</a>
       </Menu.Item>
     </Menu>
   );
@@ -38,7 +38,7 @@ export default function Navigation() {
     <div className="navBg">
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
             <img className="logoImg" src={Logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />

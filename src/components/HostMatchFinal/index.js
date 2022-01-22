@@ -3,13 +3,35 @@ import "./style.css";
 import { Radio, Input, Button, Result } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import Modal from "antd/lib/modal/Modal";
+import emailjs from "@emailjs/browser";
 
 const HostMatchFinal = (props) => {
   const [value, setValue] = useState(1);
   const [success, setSuccess] = useState(false);
+  let sendObject = {
+    to_name: "Kaustubh",
+    to_email: "kaustubh.debnath10@gmail.com",
+    date: "28.01.2022",
+    format: "10 Over Leather Ball",
+    venue: "SVD Maidan",
+  };
 
   const ClickHandler = () => {
-    setSuccess(true);
+    emailjs
+      .send(
+        "service_ccjhlru",
+        "template_gdsvtg7",
+        sendObject,
+        "user_W8qVMmzNOx0uiGyH3sqTa"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
     console.log("bruhhh");
     props.createMatch();
   };
@@ -80,7 +102,10 @@ const HostMatchFinal = (props) => {
               shape="circle"
               icon={<ArrowRightOutlined />}
               className="nextArrow"
-              onClick={ClickHandler}
+              onClick={() => {
+                setSuccess(true);
+                ClickHandler();
+              }}
             ></Button>
           </div>
           <div className="side">

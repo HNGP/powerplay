@@ -1,82 +1,42 @@
-.App {
-  font-family: sans-serif;
-  text-align: left;
-}
-form {
-  margin: 30px auto 0;
-  max-width: 400px;
-}
-.front {
-  position: relative;
-  transform: rotateY(0deg);
-  background-color: red;
-}
-.back {
-  position: relative;
-  transform: rotateY(180deg);
-  background-color: yellow;
-}
-.rccs__card {
-  height: 182.873px;
-  margin-top: 10;
-  margin-bottom: 10;
-  position: relative;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-  width: 290px;
-
-  /* background: linear-gradient(
-     25deg
-  , #986, #234); */
+.payment-layout {
+  padding: 50px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.front1 {
-  display: flex;
+.payment-layout p {
+  font-size: 14px;
+  color: grey;
+  letter-spacing: 0.8;
+}
+
+.payment-layout h1 {
+  font-size: 60px;
+  margin-top: -20px;
+}
+
+.payment-method {
+  font-size: 50px;
+  height: 80px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.payment-icon {
   margin-top: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: red;
+  margin-left: 0px;
 }
 
-.back1 {
-  transform: rotateY(360deg);
-  margin-bottom: 30px !important;
-  background-color: yellow;
-}
-.App-cards-list {
-  display: flex;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.credit-card {
+  font-size: 30px;
 }
 
-.App-cards-list > * {
-  transform: scale(0.8);
-  margin-bottom: 30px !important;
-}
-
-.back3 {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-image: url(./images/6.jpeg);
-}
-/* rccs-signature-background: repeating-linear-gradient(
-    0.1deg,
-    #fff 20%,
-    #fff 40%,
-    #fea 40%,
-    #fea 44%,
-    #fff 44%
-  );
-  rccs-default-background: linear-gradient(25deg, #d32121, #178a63);
-  rccs-unknown-background: linear-gradient(25deg, rgb(160, 18, 101), #999);
-  rccs-background-transition: 0.5s;
-  rccs-animate-background: true; */
-
-.rccs__card--unknown > div {
-  background-image: url(./images/6.jpeg);
+.ant-radio-button-wrapper:first-child:last-child {
+  border-radius: 5px;
 }
