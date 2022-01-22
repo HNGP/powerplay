@@ -45,7 +45,7 @@ export default function Matches() {
     <div>
       <div className="header">
         <h1>MATCHES</h1>
-        <h3>Upcomming events in your area</h3>
+        <h3>Upcoming events in your area</h3>
       </div>
       <div className="matches">
         {tourny.map((trny) => (
