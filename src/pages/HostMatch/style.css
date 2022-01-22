@@ -1,0 +1,16 @@
+.hero-host-match {
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-host-match > h1 {
+  font-family: "Bebas Neue";
+  margin-top: 40px;
+  font-size: 80px;
+}
+
+.hero-host-match > p {
+  font-size: 20px;
+}

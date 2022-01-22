@@ -7,6 +7,7 @@ import Landing from "./pages/Landing";
 import Match from "./pages/Match";
 import Matches from "./pages/Matches";
 import HostMatch from "./pages/HostMatch";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/matches" element={<Matches />} />
           <Route path="/matches/:matchId" element={<Match />} />
           <Route path="/hostMatch" element={<HostMatch />} />
+          <Route path="/login" element={<Login />} />
           <Route
             path="*"
             element={
