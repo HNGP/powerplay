@@ -1,8 +1,9 @@
 import { Card, List, Modal, Button, Radio } from "antd";
 import "antd/dist/antd.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./style.css";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { fetchTeamById } from "../../api/api";
 
 const data = [
   {
@@ -29,7 +30,21 @@ const data = [
 
 const TeamModal = (props) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [team, setTeam] = useState({});
   const [value, setValue] = useState("Aman Kumar");
+
+  useEffect(() => {
+    const fetchTeam = async () => {
+      const teamDetails = await fetchTeamById(props.text);
+      if (teamDetails) {
+        var matches = teamDetails.title.match(/\b(\w)/g);
+        var acronym = matches.join("");
+        setTeam({ ...teamDetails, initial: acronym });
+      }
+    };
+
+    fetchTeam();
+  }, [props.text]);
 
   const toggleRadio = (e) => {
     setValue(e.target.value);
@@ -50,7 +65,7 @@ const TeamModal = (props) => {
   return (
     <div>
       <Button className="team-title" type="link" onClick={showModal}>
-        {props.text}
+        {team.initial}
       </Button>
       <Modal
         closeIcon={<IoMdArrowRoundBack />}
@@ -70,7 +85,7 @@ const TeamModal = (props) => {
         ]}
       >
         <Card style={{ width: "100%" }}>
-          <div className="teamDiv">{props.text}</div>
+          <div className="teamDiv">{team.title}</div>
           <List
             itemLayout="horizontal"
             dataSource={data}

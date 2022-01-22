@@ -13,3 +13,8 @@ export const fetchMatchById = async (id) => {
   const response = await api.get(`/match/${id}`);
   return response.data;
 };
+
+export const fetchTeamById = async (id) => {
+  const response = await api.get(`/teams/${id}`);
+  return response.data;
+};
