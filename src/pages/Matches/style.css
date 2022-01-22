@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&display=swap");
 .header {
-  margin: 4rem 13rem;
+    margin: 4rem 13rem;
 }
 
-.header > h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  line-height: 29px;
-  letter-spacing: -0.01em;
+.header>h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
 }
 
-.header > h1 {
-  font-size: 80px;
-  font-family: "Bebas Neue";
+.header>h1 {
+    font-size: 80px;
+    font-family: "Bebas Neue";
 }
