@@ -3,8 +3,15 @@
         { 
             "id": "V1StGXR8_Z5jdHi6B-myT", 
             "title": "RFCC Women’s Cricket Match", 
-            "sport": "Cricket", 
-            "date": "27th Feb 2021"
+            "sport": "Cricket",
+            "organiser": "Group", 
+            "date": "27th Feb 2021",
+            "venue": "SVD Maidan",
+            "format": "10 overs, tennis ball",
+            "byog": true,
+            "description": "Hosted by the RWA of Galaxy Apartments, this is an open cricket match for the residents of Mumbai.",
+            "ateam": "Malad Kings",
+            "bteam": "Marine Warriors"
         }
     ]
 }
