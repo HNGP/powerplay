@@ -82,7 +82,3 @@ input {
   rccs-unknown-background: linear-gradient(25deg, rgb(160, 18, 101), #999);
   rccs-background-transition: 0.5s;
   rccs-animate-background: true; */
-
-.rccs__card--unknown > div {
-  /* background-image: url(./images/6.jpeg); */
-}

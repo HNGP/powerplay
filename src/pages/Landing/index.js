@@ -1,6 +1,7 @@
 import React, { UseState, UseEffect } from "react";
 import { Row, Col } from "antd";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import "./style.css";
 import Logo from "../../Image/logo.svg";
 import Background from "../../Image/background.webp";
@@ -22,10 +23,20 @@ export default function Landing() {
               <p>Powerplay is a community driven service. Built in India.</p>
             </Row>
             <Row>
-              <p className="Explore">
-                Explore Matches in your city.{" "}
-                <AiOutlineArrowRight style={{ paddingBottom: "2px" }} />
-              </p>
+              <Link to={`/matches`} style={{ textDecoration: "none" }}>
+                <p className="Explore">
+                  Explore Matches in your city.{" "}
+                  <AiOutlineArrowRight style={{ paddingBottom: "2px" }} />
+                </p>
+              </Link>
+            </Row>
+            <Row>
+              <Link to={`/hostMatch`} style={{ textDecoration: "none" }}>
+                <p className="Explore">
+                  Looking to Host a Match?{" "}
+                  <AiOutlineArrowRight style={{ paddingBottom: "2px" }} />
+                </p>
+              </Link>
             </Row>
           </div>
         </Col>

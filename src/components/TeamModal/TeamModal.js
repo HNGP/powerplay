@@ -1,5 +1,6 @@
 import { Card, List, Modal, Button, Radio } from "antd";
 import "antd/dist/antd.css";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./style.css";
 import { IoMdArrowRoundBack } from "react-icons/io";
@@ -30,6 +31,7 @@ const data = [
 const TeamModal = (props) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [value, setValue] = useState("Aman Kumar");
+  const navigate = useNavigate();
 
   const toggleRadio = (e) => {
     setValue(e.target.value);
@@ -45,6 +47,7 @@ const TeamModal = (props) => {
 
   const handlePayment = () => {
     setIsModalVisible(false);
+    navigate("/payment");
   };
 
   return (
