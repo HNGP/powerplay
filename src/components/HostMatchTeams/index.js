@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Input, InputNumber, Button } from "antd";
+import { nanoid } from "nanoid";
+import { createTeam } from "../../api/api";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
 const HostMatchTeams = (props) => {
+  const [value, setValue] = useState("");
+
+  const createATeam = async (id) => {
+    const team = await createTeam({
+      id,
+      title: value,
+      capacity: "11",
+      players: [],
+    });
+    if (team) {
+      console.log("success");
+    }
+  };
+
   const ClickHandler = () => {
-    props.onNextStep(6);
+    const id = nanoid();
+    if (props.id === 1) props.onNextStep({ ateam: id });
+    if (props.id === 2) props.onNextStep({ bteam: id });
+    createATeam(id);
+  };
+
+  const changeTeamName = (e) => {
+    setValue(e.target.value);
   };
 
   function onChange(value) {
@@ -24,7 +47,7 @@ const HostMatchTeams = (props) => {
         </p>
         <div className="gap">
           <p className="text1">Enter Team Name</p>
-          <Input className="inputField" />
+          <Input className="inputField" onChange={changeTeamName} />
         </div>
         <div className="gap">
           <div className="side">

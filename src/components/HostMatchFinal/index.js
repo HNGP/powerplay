@@ -17,7 +17,6 @@ const HostMatchFinal = (props) => {
   };
 
   const ClickHandler = () => {
-    setSuccess(true);
     emailjs
       .send(
         "service_ccjhlru",
@@ -34,6 +33,7 @@ const HostMatchFinal = (props) => {
         }
       );
     console.log("bruhhh");
+    props.createMatch();
   };
 
   // const ShowResult = () => {
@@ -102,7 +102,10 @@ const HostMatchFinal = (props) => {
               shape="circle"
               icon={<ArrowRightOutlined />}
               className="nextArrow"
-              onClick={ClickHandler}
+              onClick={() => {
+                setSuccess(true);
+                ClickHandler();
+              }}
             ></Button>
           </div>
           <div className="side">
