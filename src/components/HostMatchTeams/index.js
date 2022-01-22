@@ -4,6 +4,10 @@ import { Input, InputNumber, Button } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
 const HostMatchTeams = (props) => {
+  const ClickHandler = () => {
+    props.onNextStep(6);
+  };
+
   function onChange(value) {
     console.log("changed", value);
   }
@@ -88,6 +92,7 @@ const HostMatchTeams = (props) => {
               shape="circle"
               icon={<ArrowRightOutlined />}
               className="nextArrow"
+              onClick={ClickHandler}
             ></Button>
           </div>
           <div className="side">

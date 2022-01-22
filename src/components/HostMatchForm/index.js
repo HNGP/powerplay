@@ -8,7 +8,11 @@ import next from "../../Image/next.png";
 const format = "HH:mm";
 const { TextArea } = Input;
 
-const HostMatchForm = () => {
+const HostMatchForm = (props) => {
+  const ClickHandler = () => {
+    props.onNextStep(5);
+  };
+
   return (
     <div>
       <div className="frm">
@@ -61,6 +65,7 @@ const HostMatchForm = () => {
               shape="circle"
               icon={<ArrowRightOutlined />}
               className="nextArrow"
+              onClick={ClickHandler}
             ></Button>
           </div>
           <div className="side">

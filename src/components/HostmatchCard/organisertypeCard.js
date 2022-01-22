@@ -3,8 +3,11 @@ import { Button, Radio } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
-const OrganisertypeCard = () => {
+const OrganisertypeCard = (props) => {
   const [value, setValue] = useState(1);
+  const ClickHandler = () => {
+    props.onNextStep(4);
+  };
 
   const onChange = (e) => {
     console.log("radio checked", e.target.value);
@@ -35,6 +38,7 @@ const OrganisertypeCard = () => {
         shape="circle"
         icon={<ArrowRightOutlined />}
         danger
+        onClick={ClickHandler}
       ></Button>
     </div>
   );
