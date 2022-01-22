@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import TournamentCard from "../../components/TournamentCard";
 import { fetchMatches } from "../../api/api";
 import "./style.css";
@@ -21,11 +22,17 @@ export default function Matches() {
       </div>
       <div className="matches">
         {tourny.map((trny) => (
-          <TournamentCard
-            name={trny.title}
-            sport={trny.sport}
-            date={trny.date}
-          />
+          <Link
+            to={`/matches/${trny.id}`}
+            key={trny.id}
+            style={{ textDecoration: "none" }}
+          >
+            <TournamentCard
+              name={trny.title}
+              sport={trny.sport}
+              date={trny.date}
+            />
+          </Link>
         ))}
       </div>
     </div>
