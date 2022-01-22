@@ -6,13 +6,12 @@ const middlewares = jsonServer.defaults();
 const path = require("path");
 const port = process.env.PORT || 3200;
 
-const app = express();
 server.use(middlewares);
 server.use(router);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"));
-  app.get("*", (req, res) => {
+  server.use(express.static("build"));
+  server.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "build", "index.html"));
   });
 }
