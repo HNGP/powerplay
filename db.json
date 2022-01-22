@@ -1,10 +1,142 @@
 {
-    "match": [
-        { 
-            "id": "V1StGXR8_Z5jdHi6B-myT", 
-            "title": "RFCC Women’s Cricket Match", 
-            "sport": "Cricket", 
-            "date": "27th Feb 2021"
-        }
-    ]
+	"match": [
+		{
+			"id": "V1StGXR8_Z5jdHi6B-myT",
+			"title": "RFCC Women’s Cricket Match",
+			"sport": "Cricket",
+			"organiser": "Group",
+			"date": "27th Feb 2021",
+			"venue": "SVD Maidan",
+			"format": "10 overs, tennis ball",
+			"byog": true,
+			"description": "Hosted by the RWA of Galaxy Apartments, this is an open cricket match for the residents of Mumbai.",
+			"ateam": "2",
+			"bteam": "1"
+		}
+	],
+	"teams": [
+		{
+			"id": 1,
+			"title": "Marine Warriors",
+			"capacity": "11",
+			"players": [2, 4, 5, 1, 3]
+		},
+		{
+			"id": 2,
+			"title": "Malad Kings",
+			"capacity": "11",
+			"players": [6, 7, 8, 9]
+		},
+		{
+			"id": 3,
+			"title": "Dwarka Daredevils",
+			"capacity": "6",
+			"players": [8, 7, 9, 10]
+		},
+		{
+			"id": 4,
+			"title": "Galaxy Warriors",
+			"capacity": "6",
+			"players": [1, 4, 5, 3]
+		},
+		{
+			"id": 5,
+			"title": "NRG Team",
+			"capacity": "8",
+			"players": [2, 4, 5, 1, 3, 9]
+		},
+		{
+			"id": 6,
+			"title": "Kolkata Sailors",
+			"capacity": "8",
+			"players": [8, 7, 9, 10, 13]
+		}
+	],
+	"players": [
+		{
+			"id": 1,
+			"name": "Sachin Tendulkar",
+			"role": "Batsman"
+		},
+		{
+			"id": 2,
+			"name": "Rahul Dravid",
+			"role": "Batsman"
+		},
+		{
+			"id": 3,
+			"name": "Virat Kohli",
+			"role": "Batsman"
+		},
+		{
+			"id": 4,
+			"name": "Rohit Sharma",
+			"role": "Batsman"
+		},
+		{
+			"id": 5,
+			"name": "Shikhar Dhawan",
+			"role": "Opener"
+		},
+		{
+			"id": 6,
+			"name": "Kuldeep Yadav",
+			"role": "Opener"
+		},
+		{
+			"id": 7,
+			"name": "Shreyas Iyer",
+			"role": "Batsman"
+		},
+		{
+			"id": 8,
+			"name": "Kane Williamson",
+			"role": "Batsman"
+		},
+		{
+			"id": 9,
+			"name": "Shreyas Gopal",
+			"role": "Bowler"
+		},
+		{
+			"id": 10,
+			"name": "Ravindra Jadeja",
+			"role": "All-Rounder"
+		},
+		{
+			"id": 11,
+			"name": "Kedar Jadhav",
+			"role": "Batsman"
+		},
+		{
+			"id": 12,
+			"name": "Yusuf Pathan",
+			"role": "All-Rounder"
+		},
+		{
+			"id": 13,
+			"name": "Dhoni",
+			"role": "Wicketkeeper"
+		},
+		{
+			"id": 14,
+			"name": "Hardik Pandya",
+			"role": "All-Rounder"
+		},
+		{
+			"id": 15,
+			"name": "Ravichandran Ashwin",
+			"role": "Bowler"
+		},
+		{
+			"id": 16,
+			"name": "Krunal Pandya",
+			"role": "Bowler"
+		},
+		{
+			"id": 17,
+			"name": "Jasprit Bumrah",
+			"role": "Bowler"
+		}
+	]
 }
