@@ -6,6 +6,7 @@ import Navigation from "./components/Navbar";
 import Landing from "./pages/Landing";
 import Match from "./pages/Match";
 import Matches from "./pages/Matches";
+import HostMatch from "./pages/HostMatch";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/matches" element={<Matches />} />
           <Route path="/matches/:matchId" element={<Match />} />
+          <Route path="/hostMatch" element={<HostMatch />} />
           <Route
             path="*"
             element={
