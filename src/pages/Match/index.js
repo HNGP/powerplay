@@ -4,18 +4,31 @@ import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CircleCard from "../../components/CircleCard";
 import IconCard from "../../components/IconCard";
-import { fetchMatchById } from "../../api/api";
+import { fetchMatchById, fetchTeamById } from "../../api/api";
 import CricketIcon from "../../Image/CricketIcon.png";
 import "./style.css";
 
 export default function Match() {
   const params = useParams();
   const [match, setMatch] = useState({});
+  const [teams, setTeams] = useState({});
 
   useEffect(() => {
     const fetchMatch = async () => {
       const matchDetails = await fetchMatchById(params.matchId);
-      if (matchDetails) setMatch(matchDetails);
+      if (matchDetails) {
+        setMatch(matchDetails);
+        const teamOneDetail = await fetchTeamById(matchDetails.ateam);
+        const teamTwoDetail = await fetchTeamById(matchDetails.bteam);
+        if (teamOneDetail && teamTwoDetail) {
+          setTeams({
+            ateam: teamOneDetail.title,
+            bteam: teamTwoDetail.title,
+            acapacity: 11 - teamOneDetail.players.length,
+            bcapacity: 11 - teamTwoDetail.players.length,
+          });
+        }
+      }
     };
 
     fetchMatch();
@@ -52,12 +65,12 @@ export default function Match() {
       </div>
       <div className="competing-teams-info">
         <div>
-          <h3>{match.ateam}</h3>
-          <h3 className="secondary-header">(4 spots left)</h3>
+          <h3>{teams.ateam}</h3>
+          <h3 className="secondary-header">({teams.acapacity} spots left)</h3>
         </div>
         <div>
-          <h3>{match.bteam}</h3>
-          <h3 className="secondary-header">(4 spots left)</h3>
+          <h3>{teams.bteam}</h3>
+          <h3 className="secondary-header">({teams.bcapacity} spots left)</h3>
         </div>
       </div>
       <br />
