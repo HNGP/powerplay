@@ -4,6 +4,7 @@ import Cards from "elt-react-credit-cards";
 import "elt-react-credit-cards/es/styles-compiled.css";
 import { Button, Modal, Result } from "antd";
 import styles from "./style.css";
+import emailjs from "@emailjs/browser";
 
 const PaymentCard = (props) => {
   const [number, SetNumber] = useState("");
@@ -22,8 +23,31 @@ const PaymentCard = (props) => {
     SetExpiry(month.concat(e.target.value));
   };
 
+  let sendObject = {
+    to_name: "Kaustubh",
+    to_email: "kaustubh.debnath10@gmail.com",
+    team_name: "Malad Kings",
+    sport: "Cricket",
+    date: "28th Feb",
+  };
+
   const ShowModal = () => {
     props.getSuccess(true);
+    emailjs
+      .send(
+        "service_ccjhlru",
+        "template_p6txlfn",
+        sendObject,
+        "user_W8qVMmzNOx0uiGyH3sqTa"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
   };
 
   return (

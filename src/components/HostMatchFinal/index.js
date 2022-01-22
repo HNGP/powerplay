@@ -10,7 +10,7 @@ const HostMatchFinal = (props) => {
   const [success, setSuccess] = useState(false);
   let sendObject = {
     to_name: "Kaustubh",
-    to_email: "sumit0311@gmail.com",
+    to_email: "kaustubh.debnath10@gmail.com",
     date: "28.01.2022",
     format: "10 Over Leather Ball",
     venue: "SVD Maidan",
