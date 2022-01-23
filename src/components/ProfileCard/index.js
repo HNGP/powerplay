@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { StarFilled } from "@ant-design/icons";
 import dp from "../../Image/profilepic.png";
+
 export const ProfileCard = () => {
   return (
     <div className="profile-card">

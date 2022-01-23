@@ -1,6 +1,6 @@
 import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Navigation from "./components/Navbar";
 import Landing from "./pages/Landing";
@@ -12,10 +12,12 @@ import Payment from "./pages/Payment";
 import { Profile } from "./pages/Profile";
 
 function App() {
+  // const Location = useLocation();
+
   return (
     <div className="App">
-      <Navigation />
       <BrowserRouter>
+        <Navigation />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/matches" element={<Matches />} />

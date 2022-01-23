@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { IoMdLogIn, IoIosUnlock } from "react-icons/io";
 import { AiOutlineGoogle } from "react-icons/ai";
-
+import { Navigate, useNavigate } from "react-router-dom";
 import { Row, Col, Input, Divider, Button } from "antd";
 import "./style.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="LoginCard">
       <Row>
@@ -32,10 +34,14 @@ const Login = () => {
           </Row>
           <Row>
             <p>PASSWORD</p>
-            <Input className="password" />
+            <Input type="password" className="password" />
           </Row>
           <Row>
-            <Button className="login-button" block>
+            <Button
+              onClick={() => navigate("/")}
+              className="login-button"
+              block
+            >
               Login
             </Button>
           </Row>
